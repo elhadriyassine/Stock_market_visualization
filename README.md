@@ -24,15 +24,17 @@ The tool's core logic is handled by the get_stock_data and plot_with_indicators 
 
   - Bollinger Bands (BB_Upper & BB_Lower): A volatility channel that shows a stock's typical price range.
 
-Interactive Plotting: The plot_with_indicators function takes the fetched data and constructs a multi-panel chart using plotly.subplots. It separates the visualization into three distinct subplots for clarity:
+  - Interactive Plotting: The plot_with_indicators function takes the fetched data and constructs a multi-panel chart using plotly.subplots.
+    
+It separates the visualization into three distinct subplots for clarity:
 
-Price Chart: Displays the stock's closing price along with the Moving Averages and Bollinger Bands.
+  - Price Chart: Displays the stock's closing price along with the Moving Averages and Bollinger Bands.
 
-Volume Chart: Shows the trading volume for each period, indicating market activity.
+  - Volume Chart: Shows the trading volume for each period, indicating market activity.
 
-RSI Chart: Plots the RSI value, with horizontal lines at 30 (oversold) and 70 (overbought) to assist in interpretation.
+  - RSI Chart: Plots the RSI value, with horizontal lines at 30 (oversold) and 70 (overbought) to assist in interpretation.
 
-The @interact decorator from ipywidgets links the dropdown menus to the plotting function, so any change in the dropdowns automatically triggers a data fetch and plot refresh.
+  - The @interact decorator from ipywidgets links the dropdown menus to the plotting function, so any change in the dropdowns automatically triggers a data fetch and plot refresh.
 
 # What to Expect
 When you execute the tool in an environment like Jupyter Notebook or an interactive Python session, you will be presented with three dropdown menus:
