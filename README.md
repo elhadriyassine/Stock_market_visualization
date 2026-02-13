@@ -1,11 +1,11 @@
 # Stock_market_visualization
 Stock Market Visualization Tool
-This Python script is an interactive tool for visualizing stock market data with key technical indicators. It provides a user-friendly interface to select a stock and a time horizon, automatically fetching the relevant data and generating a detailed, multi-panel chart for analysis.
+This is an interactive tool for visualizing stock market data with key technical indicators built using Python. It provides a user-friendly interface to select a stock and a time horizon, automatically fetching the relevant data and generating a detailed, multi-panel chart for analysis.
 
-Purpose
+# Purpose
 The primary goal of this tool is to help users quickly analyze a stock's performance by displaying its price movements alongside commonly used technical indicators. This enables traders and investors to identify trends, potential entry/exit points, and overall market sentiment.
 
-How It Works
+# How It Works
 The script is built on three core libraries:
 
 yfinance: Used to fetch historical market data (Open, High, Low, Close, Volume) from Yahoo Finance.
@@ -34,8 +34,8 @@ RSI Chart: Plots the RSI value, with horizontal lines at 30 (oversold) and 70 (o
 
 The @interact decorator from ipywidgets links the dropdown menus to the plotting function, so any change in the dropdowns automatically triggers a data fetch and plot refresh.
 
-What to Expect
-When you execute the script in an environment like Jupyter Notebook or an interactive Python session, you will be presented with three dropdown menus:
+# What to Expect
+When you execute the tool in an environment like Jupyter Notebook or an interactive Python session, you will be presented with three dropdown menus:
 
 Sector: Choose from a predefined list of sectors (e.g., Technology, Finance, Energy).
 
