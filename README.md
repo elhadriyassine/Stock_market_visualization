@@ -6,23 +6,23 @@ This is an interactive tool for visualizing stock market data with key technical
 The primary goal of this tool is to help users quickly analyze a stock's performance by displaying its price movements alongside commonly used technical indicators. This enables traders and investors to identify trends, potential entry/exit points, and overall market sentiment.
 
 # How It Works
-The script is built on three core libraries:
+The tool is built on three core libraries:
 
-yfinance: Used to fetch historical market data (Open, High, Low, Close, Volume) from Yahoo Finance.
+- yfinance: Used to fetch historical market data (Open, High, Low, Close, Volume) from Yahoo Finance.
 
-plotly: A powerful plotting library that creates dynamic and interactive charts, allowing for features like zooming, panning, and hovering for data points. The plotly_dark theme is used to provide a modern, eye-pleasing aesthetic.
+- plotly: A powerful plotting library that creates dynamic and interactive charts, allowing for features like zooming, panning, and hovering for data points. The plotly_dark theme is used to provide a modern, eye-pleasing aesthetic.
 
-ipywidgets: Provides the interactive dropdown menus that allow the user to select the sector, stock, and time horizon without modifying the code.
+- ipywidgets: Provides the interactive dropdown menus that allow the user to select the sector, stock, and time horizon without modifying the code.
 
-The script's core logic is handled by the get_stock_data and plot_with_indicators functions:
+The tool's core logic is handled by the get_stock_data and plot_with_indicators functions:
 
-Data Fetching: The get_stock_data function uses yfinance to download historical data for a specified stock and time period. It also calculates several technical indicators:
+  Data Fetching: The get_stock_data function uses yfinance to download historical data for a specified stock and time period. It also calculates several technical indicators:
 
-Moving Averages (MA10 & MA50): The average closing price over the last 10 and 50 periods, respectively.
+  Moving Averages (MA10 & MA50): The average closing price over the last 10 and 50 periods, respectively.
 
-Relative Strength Index (RSI): A momentum oscillator that measures the speed and change of price movements.
+  Relative Strength Index (RSI): A momentum oscillator that measures the speed and change of price movements.
 
-Bollinger Bands (BB_Upper & BB_Lower): A volatility channel that shows a stock's typical price range.
+  Bollinger Bands (BB_Upper & BB_Lower): A volatility channel that shows a stock's typical price range.
 
 Interactive Plotting: The plot_with_indicators function takes the fetched data and constructs a multi-panel chart using plotly.subplots. It separates the visualization into three distinct subplots for clarity:
 
