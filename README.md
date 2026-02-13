@@ -16,13 +16,13 @@ The tool is built on three core libraries:
 
 The tool's core logic is handled by the get_stock_data and plot_with_indicators functions:
 
-  Data Fetching: The get_stock_data function uses yfinance to download historical data for a specified stock and time period. It also calculates several technical indicators:
+  - Data Fetching: The get_stock_data function uses yfinance to download historical data for a specified stock and time period. It also calculates several technical indicators:
 
-  Moving Averages (MA10 & MA50): The average closing price over the last 10 and 50 periods, respectively.
+  - Moving Averages (MA10 & MA50): The average closing price over the last 10 and 50 periods, respectively.
 
-  Relative Strength Index (RSI): A momentum oscillator that measures the speed and change of price movements.
+  - Relative Strength Index (RSI): A momentum oscillator that measures the speed and change of price movements.
 
-  Bollinger Bands (BB_Upper & BB_Lower): A volatility channel that shows a stock's typical price range.
+  - Bollinger Bands (BB_Upper & BB_Lower): A volatility channel that shows a stock's typical price range.
 
 Interactive Plotting: The plot_with_indicators function takes the fetched data and constructs a multi-panel chart using plotly.subplots. It separates the visualization into three distinct subplots for clarity:
 
